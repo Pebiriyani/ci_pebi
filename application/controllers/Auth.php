@@ -79,7 +79,7 @@ class Auth extends CI_Controller {
 				'password' => password_hash($this->input->post('password'),PASSWORD_DEFAULT),
 				'id_role' => 2,
 				'is_active' => 1,
-				'date_created' => time(),
+				'date_created' => date('Y-m-d'),
 				'date_modified' => NULL
 			];
 
